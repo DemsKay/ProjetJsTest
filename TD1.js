@@ -16,10 +16,17 @@ function AddText() {
 // 5-6 : Permet d'abord de supprimer la valeur de l'input après avoir validé, puis de mettre le curseur sur la case.``
 // Si l'utilisateur valide sans avoir entré de valeurs, un message d'erreur apparaît.
 
-function PushToArray() {
+function ShowArray() {
     for(let i=0; i<myTab.length; i++){
-        document.querySelector('#myArray p').innerText += myTab[i]+'\n'
-        
+        document.querySelector('#myArray p').innerText += myTab[i]+'\n';
     }
-    
+}
+
+function PushToArray() {
+    myTab.push(UserInput.value);
+    ShowArray()
+}
+
+function PopToArray() {
+
 }
